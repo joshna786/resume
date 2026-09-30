@@ -1,0 +1,435 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   BODY
+================================ */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #e9edf2;
+
+    color: #222;
+
+    line-height: 1.6;
+
+}
+
+
+/* ================================
+   MAIN RESUME
+================================ */
+
+.resume {
+
+    width: 850px;
+
+    max-width: 95%;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    padding: 45px 55px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    border-bottom: 3px solid #1f4e79;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* LEFT SIDE OF HEADER */
+
+.header-left {
+
+    width: 55%;
+
+}
+
+
+/* NAME */
+
+.header-left h1 {
+
+    font-size: 30px;
+
+    color: #1f4e79;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* JOB TITLE */
+
+.header-left h2 {
+
+    font-size: 16px;
+
+    color: #555;
+
+    font-weight: normal;
+
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact {
+
+    width: 40%;
+
+    text-align: right;
+
+}
+
+
+.contact p {
+
+    font-size: 12px;
+
+    margin-bottom: 3px;
+
+    color: #444;
+
+}
+
+
+.contact a {
+
+    color: #1f4e79;
+
+    text-decoration: none;
+
+}
+
+
+.contact a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* ================================
+   SECTIONS
+================================ */
+
+section {
+
+    margin-bottom: 25px;
+
+}
+
+
+/* SECTION TITLE */
+
+.section-title {
+
+    font-size: 16px;
+
+    color: #1f4e79;
+
+    border-bottom: 2px solid #1f4e79;
+
+    padding-bottom: 5px;
+
+    margin-bottom: 12px;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* ================================
+   PROFESSIONAL SUMMARY
+================================ */
+
+.summary {
+
+    font-size: 13px;
+
+    text-align: justify;
+
+    color: #333;
+
+}
+
+
+/* ================================
+   SKILLS
+================================ */
+
+.skills {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+}
+
+
+.skills p {
+
+    font-size: 13px;
+
+}
+
+
+.skills strong {
+
+    color: #222;
+
+}
+
+
+/* ================================
+   PROJECTS
+================================ */
+
+.project {
+
+    margin-bottom: 20px;
+
+}
+
+
+/* PROJECT TITLE */
+
+.project h4 {
+
+    font-size: 14px;
+
+    color: #222;
+
+    margin-bottom: 4px;
+
+}
+
+
+/* TECHNOLOGY */
+
+.tech {
+
+    font-size: 12px;
+
+    color: #555;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* PROJECT BULLET POINTS */
+
+.project ul {
+
+    padding-left: 20px;
+
+}
+
+
+.project li {
+
+    font-size: 12.5px;
+
+    margin-bottom: 5px;
+
+    text-align: justify;
+
+}
+
+
+/* ================================
+   EDUCATION
+================================ */
+
+.education-item {
+
+    margin-bottom: 15px;
+
+}
+
+
+.education-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+.education-header strong {
+
+    font-size: 13px;
+
+    color: #222;
+
+}
+
+
+.education-header span {
+
+    font-size: 12px;
+
+    color: #555;
+
+    white-space: nowrap;
+
+}
+
+
+.education-item p {
+
+    font-size: 12.5px;
+
+    color: #444;
+
+    margin-top: 2px;
+
+}
+
+
+/* ================================
+   CERTIFICATIONS
+================================ */
+
+.certifications {
+
+    padding-left: 20px;
+
+}
+
+
+.certifications li {
+
+    font-size: 12.5px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media screen and (max-width: 700px) {
+
+    .resume {
+
+        padding: 30px 25px;
+
+    }
+
+
+    .header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .header-left {
+
+        width: 100%;
+
+    }
+
+
+    .contact {
+
+        width: 100%;
+
+        text-align: left;
+
+    }
+
+
+    .header-left h1 {
+
+        font-size: 25px;
+
+    }
+
+
+    .education-header {
+
+        flex-direction: column;
+
+        gap: 0;
+
+    }
+
+}
+
+
+/* ================================
+   PRINT
+================================ */
+
+@media print {
+
+    body {
+
+        background-color: white;
+
+    }
+
+
+    .resume {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0;
+
+        box-shadow: none;
+
+        padding: 30px 40px;
+
+    }
+
+}
